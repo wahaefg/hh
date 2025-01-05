@@ -3,19 +3,47 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        tr {
+            height: 40px; /* 设置基础行高，原始行高 */
+        }
+
+        tr.increase-height {
+            height: 52px; /* 每一行增加30%的高度 */
+        }
+
+        td {
+            text-align: center;
+            width: 50%;
+        }
+
+        td img {
+            width: 200px;
+        }
+
+        td video {
+            width: 300px;
+        }
+    </style>
 </head>
 <body>
-    <table border="1" style="width:100%; border-collapse: collapse;">
+    <table border="1">
+        <!-- 第1行 -->
         <tr>
-            <td style="text-align:center; width: 50%;">实拍图</td>
-            <td style="text-align:center; width: 50%;">效果图</td>
+            <td>实拍图</td>
+            <td>效果图</td>
         </tr>
 
         <!-- 第2行 -->
-        <tr>
-            <td style="text-align:center; width: 50%;"><img src="https://github.com/user-attachments/assets/61a1e2a2-03aa-4bfe-8428-e519c2e8bed1" alt="实拍图" width="200"></td>
-            <td style="text-align:center; width: 50%;">
-                <video width="300" controls preload="auto">
+        <tr class="increase-height">
+            <td><img src="https://github.com/user-attachments/assets/61a1e2a2-03aa-4bfe-8428-e519c2e8bed1" alt="实拍图"></td>
+            <td>
+                <video controls preload="auto">
                     <source src="https://github.com/user-attachments/assets/f7405d0b-0dcd-4334-8c65-8326f0288084" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -23,10 +51,10 @@
         </tr>
 
         <!-- 第3行 -->
-        <tr>
-            <td style="text-align:center; width: 50%;"><img src="your_image_2.jpg" alt="实拍图" width="200"></td>
-            <td style="text-align:center; width: 50%;">
-                <video width="300" controls preload="auto">
+        <tr class="increase-height">
+            <td><img src="your_image_2.jpg" alt="实拍图"></td>
+            <td>
+                <video controls preload="auto">
                     <source src="https://github.com/user-attachments/assets/dd7c5de7-fafe-41d5-a430-e6aee875dee1" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -34,10 +62,10 @@
         </tr>
 
         <!-- 第4行 -->
-        <tr>
-            <td style="text-align:center; width: 50%;"><img src="your_image_3.jpg" alt="实拍图" width="200"></td>
-            <td style="text-align:center; width: 50%;">
-                <video width="300" controls preload="auto">
+        <tr class="increase-height">
+            <td><img src="your_image_3.jpg" alt="实拍图"></td>
+            <td>
+                <video controls preload="auto">
                     <source src="https://github.com/user-attachments/assets/921838a1-b438-45d1-a255-b39271740e68" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -45,10 +73,10 @@
         </tr>
 
         <!-- 第5行 -->
-        <tr>
-            <td style="text-align:center; width: 50%;"><img src="your_image_4.jpg" alt="实拍图" width="200"></td>
-            <td style="text-align:center; width: 50%;">
-                <video width="300" controls>
+        <tr class="increase-height">
+            <td><img src="your_image_4.jpg" alt="实拍图"></td>
+            <td>
+                <video controls>
                     <source src="https://github.com/user-attachments/assets/e09d9104-5f55-48bf-a483-d74139393ca5" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -56,10 +84,10 @@
         </tr>
 
         <!-- 第6行 -->
-        <tr>
-            <td style="text-align:center; width: 50%;"><img src="your_image_5.jpg" alt="实拍图" width="200"></td>
-            <td style="text-align:center; width: 50%;">
-                <video width="300" controls>
+        <tr class="increase-height">
+            <td><img src="your_image_5.jpg" alt="实拍图"></td>
+            <td>
+                <video controls>
                     <source src="https://github.com/user-attachments/assets/eff54822-00b7-4c34-b7d7-33ec569a33cd" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -67,10 +95,10 @@
         </tr>
 
         <!-- 第7行 -->
-        <tr>
-            <td style="text-align:center; width: 50%;"><img src="your_image_6.jpg" alt="实拍图" width="200"></td>
-            <td style="text-align:center; width: 50%;">
-                <video width="300" controls>
+        <tr class="increase-height">
+            <td><img src="your_image_6.jpg" alt="实拍图"></td>
+            <td>
+                <video controls>
                     <source src="https://github.com/user-attachments/assets/7deeaa91-ae3c-4c24-a4f2-04c7d9b71167" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -78,10 +106,10 @@
         </tr>
 
         <!-- 第8行 -->
-        <tr>
-            <td style="text-align:center; width: 50%;"><img src="your_image_7.jpg" alt="实拍图" width="200"></td>
-            <td style="text-align:center; width: 50%;">
-                <video width="300" controls>
+        <tr class="increase-height">
+            <td><img src="your_image_7.jpg" alt="实拍图"></td>
+            <td>
+                <video controls>
                     <source src="https://github.com/user-attachments/assets/109e453f-0819-4895-b6ce-ef910f8a3146" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -89,10 +117,10 @@
         </tr>
 
         <!-- 第9行 -->
-        <tr>
-            <td style="text-align:center; width: 50%;"><img src="your_image_8.jpg" alt="实拍图" width="200"></td>
-            <td style="text-align:center; width: 50%;">
-                <video width="300" controls>
+        <tr class="increase-height">
+            <td><img src="your_image_8.jpg" alt="实拍图"></td>
+            <td>
+                <video controls>
                     <source src="https://github.com/user-attachments/assets/99200cae-1475-4af4-977e-59d314929ef1" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -100,10 +128,10 @@
         </tr>
 
         <!-- 第10行 -->
-        <tr>
-            <td style="text-align:center; width: 50%;"><img src="your_image_9.jpg" alt="实拍图" width="200"></td>
-            <td style="text-align:center; width: 50%;">
-                <video width="300" controls>
+        <tr class="increase-height">
+            <td><img src="your_image_9.jpg" alt="实拍图"></td>
+            <td>
+                <video controls>
                     <source src="https://github.com/user-attachments/assets/8e3fbe46-8af4-42b8-9fec-156fe3e5ab24" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -111,16 +139,15 @@
         </tr>
 
         <!-- 第11行 -->
-        <tr>
-            <td style="text-align:center; width: 50%;"><img src="your_image_10.jpg" alt="实拍图" width="200"></td>
-            <td style="text-align:center; width: 50%;">
-                <video width="300" controls>
+        <tr class="increase-height">
+            <td><img src="your_image_10.jpg" alt="实拍图"></td>
+            <td>
+                <video controls>
                     <source src="your_video_10.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </td>
         </tr>
     </table>
-
 </body>
 </html>
