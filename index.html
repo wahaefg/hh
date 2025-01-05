@@ -10,16 +10,13 @@
         }
 
         tr {
-            height: 40px; /* 设置基础行高，原始行高 */
-        }
-
-        tr.increase-height {
-            height: 80px; /* 每一行高度增加一倍 */
+            height: 80px; /* 每一行的固定高度 */
         }
 
         td {
             text-align: center;
             width: 50%;
+            vertical-align: middle; /* 垂直居中 */
         }
 
         td img {
@@ -28,6 +25,8 @@
 
         td video {
             width: 300px;
+            height: 100%;  /* 让视频占满整个单元格的高度 */
+            object-fit: contain; /* 保持视频的纵横比并适应容器 */
         }
     </style>
 </head>
@@ -40,7 +39,7 @@
         </tr>
 
         <!-- 第2行 -->
-        <tr class="increase-height">
+        <tr>
             <td><img src="https://github.com/user-attachments/assets/61a1e2a2-03aa-4bfe-8428-e519c2e8bed1" alt="实拍图"></td>
             <td>
                 <video controls preload="auto">
@@ -51,7 +50,7 @@
         </tr>
 
         <!-- 第3行 -->
-        <tr class="increase-height">
+        <tr>
             <td><img src="your_image_2.jpg" alt="实拍图"></td>
             <td>
                 <video controls preload="auto">
@@ -62,7 +61,7 @@
         </tr>
 
         <!-- 第4行 -->
-        <tr class="increase-height">
+        <tr>
             <td><img src="your_image_3.jpg" alt="实拍图"></td>
             <td>
                 <video controls preload="auto">
@@ -73,7 +72,7 @@
         </tr>
 
         <!-- 第5行 -->
-        <tr class="increase-height">
+        <tr>
             <td><img src="your_image_4.jpg" alt="实拍图"></td>
             <td>
                 <video controls>
@@ -84,7 +83,7 @@
         </tr>
 
         <!-- 第6行 -->
-        <tr class="increase-height">
+        <tr>
             <td><img src="your_image_5.jpg" alt="实拍图"></td>
             <td>
                 <video controls>
@@ -95,7 +94,59 @@
         </tr>
 
         <!-- 第7行 -->
-        <tr class="increase-height">
+        <tr>
             <td><img src="your_image_6.jpg" alt="实拍图"></td>
             <td>
-                <video contro
+                <video controls>
+                    <source src="https://github.com/user-attachments/assets/7deeaa91-ae3c-4c24-a4f2-04c7d9b71167" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+        </tr>
+
+        <!-- 第8行 -->
+        <tr>
+            <td><img src="your_image_7.jpg" alt="实拍图"></td>
+            <td>
+                <video controls>
+                    <source src="https://github.com/user-attachments/assets/109e453f-0819-4895-b6ce-ef910f8a3146" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+        </tr>
+
+        <!-- 第9行 -->
+        <tr>
+            <td><img src="your_image_8.jpg" alt="实拍图"></td>
+            <td>
+                <video controls>
+                    <source src="https://github.com/user-attachments/assets/99200cae-1475-4af4-977e-59d314929ef1" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+        </tr>
+
+        <!-- 第10行 -->
+        <tr>
+            <td><img src="your_image_9.jpg" alt="实拍图"></td>
+            <td>
+                <video controls>
+                    <source src="https://github.com/user-attachments/assets/8e3fbe46-8af4-42b8-9fec-156fe3e5ab24" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+        </tr>
+
+        <!-- 第11行 -->
+        <tr>
+            <td><img src="your_image_10.jpg" alt="实拍图"></td>
+            <td>
+                <video controls>
+                    <source src="your_video_10.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
